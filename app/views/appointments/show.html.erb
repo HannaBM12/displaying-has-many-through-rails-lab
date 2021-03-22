@@ -1,0 +1,8 @@
+<h1>Appointment Page</h1>
+<ul>
+<li><strong>Date:</strong><%= @appointment.appointment_datetime.strftime("%B %d, %Y")%> at <%= @appointment.appointment_datetime.strftime("%H:%M")%></li>
+    <ul>
+        <li><strong>Patient Name: </strong><%= @appointment.patient.name%></li>
+        <li><strong>Doctor's Name: </strong><%= @appointment.doctor.name%></li>
+    </ul> 
+</ul>
